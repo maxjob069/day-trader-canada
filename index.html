@@ -1,187 +1,100 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation Officielle | Day Trader Canada - France</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --dtc-blue: #003366; /* Bleu Royal DTC */
-            --dtc-green: #28a745; /* Vert DTC */
-            --dtc-white: #FFFFFF;
-            --dtc-gray: #F4F7fA;
-        }
-        .bg-dtc-blue { background-color: var(--dtc-blue); }
-        .text-dtc-blue { color: var(--dtc-blue); }
-        .bg-dtc-green { background-color: var(--dtc-green); }
-        .border-dtc-green { border-color: var(--dtc-green); }
-        .text-dtc-green { color: var(--dtc-green); }
-        .dtc-shadow { box-shadow: 0 10px 15px -3px rgba(0, 51, 102, 0.1), 0 4px 6px -2px rgba(0, 51, 102, 0.05); }
-    </style>
-</head>
-<body class="bg-white font-sans text-gray-800 antialiased">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DayTrader Canada — Présentation Exclusive France</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:       #091827;
+      --navy2:      #0E2236;
+      --navy3:      #142D47;
+      --green:      #3DC97F;
+      --green-d:    #2DAA68;
+      --cyan:       #1BC5DC;
+      --cyan-d:     #12A0B8;
+      --gold:       #F0A500;
+      --gold-d:     #C88A00;
+      --silver:     #B8C6D8;
+      --white:      #F0F7FF;
+      --muted:      #7A9AB8;
+      --border:     rgba(255,255,255,0.07);
+      --card-bg:    rgba(255,255,255,0.04);
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--navy);color:var(--white);font-family:'Outfit',sans-serif;font-weight:400;line-height:1.65;overflow-x:hidden;}
 
-    <nav class="bg-dtc-blue p-4 shadow-lg sticky top-0 z-50 border-b-2 border-dtc-green">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <img src="https://maxjob069.github.io/day-trader-canada/logo.png" alt="Logo Day Trader Canada" class="h-12 w-auto">
-            
-            <div class="space-x-4 text-dtc-white opacity-90 hidden md:flex items-center text-sm font-medium tracking-wide">
-                <a href="#vision" class="text-white hover:text-dtc-green transition">Vision</a>
-                <a href="#formation" class="text-white hover:text-dtc-green transition">Formation</a>
-                <a href="#accompagnement" class="text-white hover:text-dtc-green transition">Accompagnement</a>
-                <a href="#temoignages" class="text-white hover:text-dtc-green transition">Témoignages</a>
-                <a href="#closing" class="bg-dtc-green text-white px-6 py-2 rounded-full font-bold hover:bg-white hover:text-dtc-green transition transform hover:scale-105">Candidater</a>
-            </div>
-        </div>
-    </nav>
+    /* ─── TYPOGRAPHY ─── */
+    h1,h2,h3{font-family:'Syne',sans-serif;font-weight:800;line-height:1.15;}
+    .label{font-family:'Bebas Neue',sans-serif;font-size:.85rem;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase;}
+    p{color:rgba(240,247,255,.78);font-size:1.05rem;}
 
-    <header id="vision" class="py-28 px-6 text-center bg-white border-b border-gray-100">
-        <div class="max-w-5xl mx-auto">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-dtc-blue leading-tight mb-6 tracking-tighter">
-                Maîtrisez les Marchés Nord-Américains
-            </h1>
-            <p class="text-2xl text-gray-700 mb-10 opacity-90 leading-relaxed font-light">
-                L'écosystème francophone de référence, propulsé depuis le Québec, pour devenir un trader autonome et rentable.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center bg-dtc-gray p-6 rounded-2xl border border-gray-100 inline-block shadow-inner">
-                <span class="text-dtc-blue font-bold text-lg">Présent au Salon du Trading</span>
-                <img src="https://maxjob069.github.io/day-trader-canada/logo.png" alt="DTC Logo" class="h-8">
-                <span class="text-dtc-blue font-bold text-lg">À Paris Tous les Ans</span>
-            </div>
-        </div>
-    </header>
+    /* ─── LAYOUT ─── */
+    .container{max-width:1100px;margin:0 auto;padding:0 2rem;}
+    .section{padding:5rem 0;}
+    .section-alt{background:var(--navy2);}
+    .section-dark{background:var(--navy3);}
 
-    <section class="py-20 px-6 bg-dtc-gray">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="bg-white p-12 rounded-3xl dtc-shadow border border-gray-100">
-                    <h2 class="text-3xl font-bold text-dtc-blue mb-6">Le trading n'est pas un jeu. C'est une discipline.</h2>
-                    <p class="text-gray-700 leading-relaxed mb-6 font-light">
-                        Le marché sans pitié ne pardonne pas l'amateurisme. Pour réussir durablement, vous avez besoin de plus que de simples signaux : il vous faut une méthodologie stricte, des outils professionnels et un mindset d'acier. <br><br>
-                        Day Trader Canada combine théorie exhaustive et pratique intensive pour vous mener à l'autonomie.
-                    </p>
-                </div>
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-dtc-blue">Le Parcours de l'Excellence</h3>
-                    <div class="flex items-center gap-4 bg-white p-6 rounded-xl border border-gray-100 dtc-shadow">
-                        <span class="text-4xl text-dtc-green">🎓</span>
-                        <p class="font-semibold text-dtc-blue">Formations Théoriques Complètes (e-Learning).</p>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white p-6 rounded-xl border border-gray-100 dtc-shadow">
-                        <span class="text-4xl text-dtc-green">🖥️</span>
-                        <p class="font-semibold text-dtc-blue">Pratique intensive en Salle de Trading Virtuelle.</p>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white p-6 rounded-xl border border-gray-100 dtc-shadow">
-                        <span class="text-4xl text-dtc-green">🎧</span>
-                        <p class="font-semibold text-dtc-blue">Mentorat & Coaching "Live" par des Experts du Québec.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    /* ─── HERO ─── */
+    #hero{
+      min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(27,197,220,.12) 0%, transparent 60%),
+                  radial-gradient(ellipse 60% 40% at 80% 80%, rgba(61,201,127,.08) 0%, transparent 50%),
+                  var(--navy);
+      padding:3rem 2rem;position:relative;overflow:hidden;
+    }
+    #hero::before{
+      content:'';position:absolute;inset:0;
+      background-image: repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,.025) 39px,rgba(255,255,255,.025) 40px),
+                        repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,.025) 39px,rgba(255,255,255,.025) 40px);
+      pointer-events:none;
+    }
+    .hero-logo{width:180px;margin-bottom:2rem;filter:drop-shadow(0 0 30px rgba(27,197,220,.35));animation:logoFloat 3s ease-in-out infinite;}
+    @keyframes logoFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+    .hero-badge{
+      display:inline-flex;align-items:center;gap:.6rem;background:rgba(27,197,220,.1);border:1px solid rgba(27,197,220,.25);
+      border-radius:2rem;padding:.4rem 1.1rem;margin-bottom:1.5rem;font-size:.82rem;color:var(--cyan);letter-spacing:.08em;
+    }
+    .hero-badge span{width:6px;height:6px;background:var(--cyan);border-radius:50%;display:inline-block;animation:pulse 1.5s infinite;}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.3);}}
+    #hero h1{font-size:clamp(2.8rem,6vw,5.5rem);margin-bottom:1rem;letter-spacing:-.02em;}
+    #hero h1 span{background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    #hero .sub{font-size:clamp(1rem,2vw,1.25rem);color:var(--muted);max-width:650px;margin:0 auto 2.5rem;}
+    .hero-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:1.5rem;}
+    .hero-pill{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:2rem;padding:.4rem 1rem;font-size:.88rem;color:var(--silver);}
+    .scroll-arrow{margin-top:3rem;display:flex;flex-direction:column;align-items:center;gap:.3rem;color:var(--muted);font-size:.8rem;letter-spacing:.1em;animation:bounce .8s ease-in-out infinite alternate;}
+    @keyframes bounce{from{transform:translateY(0);}to{transform:translateY(6px);}}
+    .scroll-arrow::after{content:'↓';font-size:1.4rem;}
 
-    <section id="formation" class="py-20 px-6 bg-white shadow-inner">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-dtc-blue mb-16 border-b-4 border-dtc-green inline-block pb-2 tracking-tight">Nos Formations e-Learning d'Élite</h2>
-            <div class="grid md:grid-cols-2 gap-8 text-left">
-                <div class="bg-white p-10 rounded-2xl dtc-shadow border border-gray-100 hover:border-dtc-green transition duration-300">
-                    <h3 class="text-2xl font-bold text-dtc-blue mb-6">Programme Elite <span class="text-dtc-green">Actions</span></h3>
-                    <ul class="space-y-3 text-gray-700 font-light">
-                        <li>• Fondamentaux et Analyse Technique.</li>
-                        <li>• Stratégies de Volume & Order Flow (Tape Reading).</li>
-                        <li>• Spécialisation sur Actions Américaines (NYSE/NASDAQ).</li>
-                        <li>• Psychologie et Gestion du Risque de A à Z.</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-10 rounded-2xl dtc-shadow border border-gray-100 hover:border-dtc-green transition duration-300">
-                    <h3 class="text-2xl font-bold text-dtc-blue mb-6">Programme Elite <span class="text-dtc-green">Options</span></h3>
-                    <ul class="space-y-3 text-gray-700 font-light">
-                        <li>• Mécanismes et Stratégies Avancées sur Options.</li>
-                        <li>• Gestion de Portefeuille et Couverture du Risque.</li>
-                        <li>• Complémentarité avec le Trading Action pour booster la performance.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    /* ─── STATS STRIP ─── */
+    .stats-strip{background:linear-gradient(135deg,rgba(61,201,127,.1),rgba(27,197,220,.1));border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2.5rem 0;}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center;}
+    .stat-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+    .stat-label{font-size:.82rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.07em;}
 
-    <section id="accompagnement" class="py-20 bg-dtc-blue text-white px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl font-bold mb-6 border-b-4 border-dtc-green inline-block pb-2 tracking-tight">Mentorat & Salle de Marché Virtuelle</h2>
-                    <p class="text-xl opacity-90 mb-8 leading-relaxed font-light">
-                        Ne tradez plus jamais seul devant vos écrans. Intégrez une communauté exclusive et bénéficiez de l'expérience en direct de traders rentables.
-                    </p>
-                    <ul class="space-y-6 text-lg font-medium">
-                        <li class="flex items-center"><span class="text-dtc-green mr-3 text-xl">✅</span> <strong>Sessions Live Quotidiennes</strong> : Trading en temps réel lors de l'ouverture des marchés US.</li>
-                        <li class="flex items-center"><span class="text-dtc-green mr-3 text-xl">✅</span> <strong>Plan de Match du Jour</strong> : Analyse pré-marché pour identifier les meilleures opportunités.</li>
-                        <li class="flex items-center"><span class="text-dtc-green mr-3 text-xl">✅</span> <strong>Revue de Trades</strong> : Analyse personnalisée de vos exécutions pour corriger vos erreurs.</li>
-                        <li class="flex items-center"><span class="text-dtc-green mr-3 text-xl">✅</span> <strong>Communauté Exclusive</strong> : Échanges et entraide sur Discord avec des centaines de passionnés.</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-12 rounded-3xl text-dtc-blue dtc-shadow text-center">
-                    <div class="text-6xl text-dtc-green mb-4">🎤</div>
-                    <p class="text-2xl font-bold mb-4">La Pratique Transmise</p>
-                    <p class="text-gray-700 leading-relaxed font-italic italic font-light">"Accéder en direct à l'exécution et à la gestion du risque de traders professionnels est le chemin le plus court vers votre propre rentabilité."</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    /* ─── VISION SECTION ─── */
+    .vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+    .vision-text h2{font-size:clamp(2rem,4vw,3rem);margin:1rem 0;}
+    .vision-text h2 em{font-style:normal;color:var(--green);}
+    .vision-checklist{margin-top:1.8rem;display:flex;flex-direction:column;gap:1rem;}
+    .vision-check{display:flex;align-items:flex-start;gap:.9rem;background:var(--card-bg);border:1px solid var(--border);border-radius:.75rem;padding:1rem 1.2rem;}
+    .vision-check .icon{width:36px;height:36px;border-radius:.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;background:rgba(61,201,127,.12);}
+    .vision-check p{font-size:.95rem;color:var(--silver);}
+    .vision-card{background:linear-gradient(145deg,var(--navy3),var(--navy2));border:1px solid var(--border);border-radius:1.5rem;padding:2.5rem;display:flex;flex-direction:column;gap:1.5rem;}
+    .dtc-logo-sm{width:140px;margin-bottom:.5rem;}
+    .vision-quote{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);line-height:1.4;}
+    .vision-quote em{color:var(--cyan);font-style:normal;}
+    .accredi-row{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
+    .accredi-badge{background:rgba(240,247,255,.06);border:1px solid var(--border);border-radius:.5rem;padding:.4rem .9rem;font-size:.8rem;color:var(--muted);}
 
-    <section id="temoignages" class="py-20 bg-gray-50 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-center text-dtc-blue mb-16 border-b-4 border-dtc-green inline-block pb-2">Ils ont franchi le cap avec Nous</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <img src="https://maxjob069.github.io/day-trader-canada/Capture%20d'écran%202026-03-24%20111813.png" alt="Témoignage Day Trader Canada 1" class="rounded-xl dtc-shadow w-full h-auto object-cover hover:scale-105 transition duration-300">
-                <img src="https://maxjob069.github.io/day-trader-canada/Capture%20d'écran%202026-03-24%20111843.png" alt="Témoignage Day Trader Canada 2" class="rounded-xl dtc-shadow w-full h-auto object-cover hover:scale-105 transition duration-300">
-                <img src="https://maxjob069.github.io/day-trader-canada/Capture%20d'écran%202026-03-24%20111856.png" alt="Témoignage Day Trader Canada 3" class="rounded-xl dtc-shadow w-full h-auto object-cover hover:scale-105 transition duration-300">
-            </div>
-        </div>
-    </section>
+    /* ─── PROBLEM ─── */
+    .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
+    .problem-card{background:rgba(255,80,80,.05);border:1px solid rgba(255,80,80,.15);border-radius:1rem;padding:1.8rem;}
+    .problem-icon{font-size:2rem;margin-bottom:1rem;}
+    .problem-card h3{font-size:1.15rem;color:#FF8080;margin-bottom:.5rem;}
+    .problem-card p{font-size:.9rem;}
 
-    <section id="closing" class="py-20 px-6 bg-white shadow-inner">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="bg-dtc-gray p-10 rounded-2xl border border-gray-100 dtc-shadow text-center">
-                    <img src="https://maxjob069.github.io/day-trader-canada/logo.png" alt="DTC Officiel" class="h-12 w-auto mx-auto mb-6">
-                    <h4 class="font-bold text-dtc-blue text-lg">Responsable Commercial France</h4>
-                    <p class="text-gray-600 text-sm italic font-light mb-6">"Mon rôle est de garantir votre réussite en adaptant l'écosystème DTC à vos objectifs spécifiques."</p>
-                    <span class="text-xs text-gray-400">Présent au Salon de l'Analyse Technique - Paris</span>
-                </div>
-                <div>
-                    <h2 class="text-4xl font-bold text-dtc-blue mb-8 tracking-tight">Votre Candidature Stratégique</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-8 font-light">
-                        L'accès à Day Trader Canada est sélectif. Nous recherchons des profils motivés et prêts à s'investir sérieusement dans leur éducation financière. <br><br>
-                        Si votre profil correspond, nous définirons ensemble l'accompagnement le plus adapté pour garantir votre indépendance sur les marchés américains.
-                    </p>
-                    <div class="bg-dtc-green text-white font-bold py-5 px-12 rounded-full text-2xl shadow-xl hover:shadow-2xl hover:bg-dtc-blue transition duration-300 inline-block">
-                        Validation du Dossier en cours...
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-dtc-gray text-center px-6">
-        <div class="max-w-3xl mx-auto bg-white p-12 rounded-3xl dtc-shadow border-4 border-dtc-green">
-            <h3 class="text-3xl font-extrabold text-dtc-blue mb-6 tracking-tighter">Offre Exclusive du Salon de Paris</h3>
-            <p class="text-xl text-dtc-green font-bold mb-10">La Complémentarité Ultime : Programme Actions + Options Combiné.</p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-10 font-light">
-                Optimisez votre capital et maximisez vos opportunités. Cette offre regroupe l'ensemble de notre savoir théorique et pratique pour un tarif préférentiel, disponible uniquement pour les candidatures validées lors de notre rencontre.
-            </p>
-            <div class="bg-dtc-gray p-6 rounded-2xl border border-gray-100 inline-block">
-                <span class="text-dtc-blue font-bold text-sm tracking-widest uppercase">Offre Limitée - Validation Obligatoire</span>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-dtc-blue text-dtc-white py-12 px-6 text-center text-sm opacity-80 border-t-2 border-dtc-green">
-        <img src="https://maxjob069.github.io/day-trader-canada/logo.png" alt="DTC Logo" class="h-8 mx-auto mb-4">
-        &copy; 2026 Day Trader Canada. Tous droits réservés. <br>
-        Ce site est exploité par un partenaire officiel agréé pour le marché européen.
-    </footer>
-
-</body>
-</html>
+    /* ─── SECTION TITLES ─── */... (12Korestants)
