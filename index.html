@@ -3,341 +3,424 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DayTrader Canada - Solutions de Trading et Accompagnement</title>
+    <title>DayTrader Canada - L'opportunité du Marché US depuis la France</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0077b6',
-                        secondary: '#00b4d8',
-                        accent: '#90e0ef',
-                        dark: '#1f2937',
-                        light: '#f3f4f6',
+                        primary: '#0b1f3b', /* DTC Blue */
+                        primaryLight: '#1a365d',
+                        accent: '#2b6cb0',
+                        lightBackground: '#f8fafc',
+                        darkText: '#1e293b',
+                        grayText: '#475569',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
+        .hero-pattern {
+            background-color: #0b1f3b;
+            background-image: radial-gradient(circle at center, #1a365d 0%, #0b1f3b 100%);
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-lightBackground text-darkText antialiased">
 
-    <!-- Header / Hero Section -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <img src="logo.jpg" alt="DayTrader Canada Logo" class="h-16 object-contain">
-            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
-                <a href="#formations" class="hover:text-primary transition">Formations</a>
-                <a href="#accompagnement" class="hover:text-primary transition">Accompagnement</a>
-                <a href="#salon" class="hover:text-primary transition">Salon du Trading</a>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-12 w-auto" src="https://www.daytradercanada.com/wp-content/themes/daytrader/public/images/svg/logo.svg" alt="DayTrader Canada">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#avantage" class="text-grayText hover:text-primary font-medium transition">L'Avantage Français</a>
+                    <a href="#histoire" class="text-grayText hover:text-primary font-medium transition">Notre Histoire</a>
+                    <a href="#equipe" class="text-grayText hover:text-primary font-medium transition">L'Équipe</a>
+                    <a href="#temoignages" class="text-grayText hover:text-primary font-medium transition">Témoignages</a>
+                    <a href="#offres" class="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-primaryLight transition">Voir nos offres</a>
+                </div>
             </div>
-            <a href="#prix" class="bg-primary text-white px-5 py-2 rounded-full font-medium hover:bg-secondary transition shadow-md">
-                Voir nos offres
-            </a>
         </div>
-    </header>
+    </nav>
 
-    <!-- Hero Content -->
-    <section class="bg-gradient-to-br from-blue-50 to-white py-20 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-dark tracking-tight mb-6">
-                Devenez un Trader Autonome et Rentable
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-32 pb-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <span class="text-accent bg-white/10 px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase mb-6">Ouverture du marché français</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Trader les Marchés Américains <br> <span class="text-blue-300">Depuis la France</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-                DayTrader Canada arrive en France ! Forts de nos <strong>25 années d'expérience</strong> sur les marchés nord-américains, nous vous apportons notre expertise reconnue pour bâtir votre stratégie structurée.
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mb-10 font-light">
+                Profitez du décalage horaire idéal pour devenir un investisseur actif sans bouleverser votre quotidien. L'expertise nord-américaine, désormais à votre portée.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#avantage" class="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg">Découvrir l'opportunité</a>
+                <a href="#offres" class="border-2 border-white/30 hover:border-white px-8 py-4 rounded-lg font-bold text-lg transition">Nos Formations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The French Advantage (Timezone) -->
+    <section id="avantage" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Le Privilège du Décalage Horaire</h2>
+                    <p class="text-lg text-grayText mb-6">
+                        Le plus grand avantage de trader le marché américain (NYSE, NASDAQ) depuis la France est l'horaire. La cloche sonne à 9h30 à New York, ce qui correspond à <strong>15h30 à Paris</strong>. Le marché ferme à <strong>22h00</strong> heure française.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-grayText text-lg"><strong>Conservez votre emploi :</strong> Vous pouvez travailler normalement le matin et trader en fin d'après-midi ou en soirée.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-grayText text-lg"><strong>Préparation optimale :</strong> Vous avez toute la matinée pour analyser les nouvelles, préparer vos stratégies et vos graphiques avant l'ouverture.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-accent mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                            <span class="text-grayText text-lg"><strong>Le marché le plus liquide :</strong> Profitez des opportunités du plus grand marché boursier mondial au moment où vous êtes le plus disponible.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                    <div class="bg-primary text-white p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Une Journée Type en France</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-blue-200">Matinée</span>
+                                <span>Activités personnelles / professionnelles</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-blue-200">14h00 - 15h30</span>
+                                <span>Analyse et préparation avec DTC (Pré-marché)</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2 font-bold text-yellow-400">
+                                <span>15h30</span>
+                                <span>Ouverture des marchés US</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-blue-200">15h30 - 22h00</span>
+                                <span>Négociation active / Trading en direct</span>
+                            </div>
+                            <div class="flex justify-between font-bold text-red-400">
+                                <span>22h00</span>
+                                <span>Clôture des marchés</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History & Approach -->
+    <section id="histoire" class="py-20 bg-lightBackground">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Notre Histoire & Approche</h2>
+            <div class="w-24 h-1 bg-accent mx-auto mb-10"></div>
+            <p class="text-xl text-grayText max-w-4xl mx-auto mb-16 leading-relaxed">
+                Fondée en 2001 et basée à Brossard (Canada), DayTrader Canada est une firme indépendante de négociants-analystes chevronnés. Depuis <strong>plus de 20 ans</strong>, notre mission est de devenir la ressource numéro 1 pour l’investisseur actif, autant sur le plan de l’apprentissage que de l'accompagnement continu.
             </p>
             
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
-                <div class="flex items-center bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-100">
-                    <div class="text-yellow-400 flex text-xl mr-3">
-                        ★★★★★
-                    </div>
-                    <span class="font-bold text-gray-800">4.8/5</span>
-                    <span class="text-gray-500 ml-2 text-sm">Avis étudiants</span>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md text-left border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-3">Apprenez des pros</h3>
+                    <p class="text-grayText">Nos formateurs sont avant tout des négociants chevronnés qui transigent sur une base quotidienne avec des capitaux en temps réel.</p>
                 </div>
-                <div class="flex items-center bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-100">
-                    <svg class="w-6 h-6 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <span class="font-bold text-gray-800">25 Ans</span>
-                    <span class="text-gray-500 ml-2 text-sm">d'expérience</span>
+                <div class="bg-white p-8 rounded-xl shadow-md text-left border-t-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">100% Transparence</h3>
+                    <p class="text-grayText">Aucun conflit d’intérêts chez DayTrader Canada. Nous sommes totalement indépendants vis-à-vis de nos fournisseurs et courtiers.</p>
                 </div>
-            </div>
-
-            <a href="#formations" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-primary rounded-full hover:bg-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                Découvrir nos programmes
-            </a>
-        </div>
-    </section>
-
-    <!-- Salon du Trading Section -->
-    <section id="salon" class="py-12 bg-primary text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-2/3 mb-6 md:mb-0">
-                <h2 class="text-2xl font-bold mb-2">Rencontrez-nous à Paris !</h2>
-                <p class="text-blue-100 text-lg">
-                    DayTrader Canada est fier de participer chaque année au prestigieux <strong>Salon du Trading à Paris</strong>. Venez échanger avec nos experts en direct, découvrir nos plateformes et assister à nos conférences exclusives.
-                </p>
-            </div>
-            <div class="md:w-1/3 flex justify-center md:justify-end">
-                <div class="bg-white text-primary font-extrabold text-xl px-8 py-4 rounded-lg shadow-lg transform rotate-2">
-                    SALON DU TRADING
+                <div class="bg-white p-8 rounded-xl shadow-md text-left border-t-4 border-primaryLight">
+                    <h3 class="text-xl font-bold text-primary mb-3">Une méthode éprouvée</h3>
+                    <p class="text-grayText">Un mélange unique de théorie, démonstrations, exercices et simulations boursières pour un processus d’apprentissage hautement efficace.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- E-learning Programs -->
-    <section id="formations" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-dark mb-4">Programmes de Formation E-Learning</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Apprenez à analyser, acheter et vendre pour saisir les opportunités du marché. Du niveau débutant à avancé.</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Programme Action -->
-                <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 hover:shadow-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Programme Action</h3>
-                    <p class="text-sm text-primary font-semibold mb-4">Devenez investisseur actif</p>
-                    <ul class="space-y-3 mb-6 text-gray-600 text-sm">
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Bases et techniques avancées (actions)</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Interactive Brokers (Trader Workstation)</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Repérage de titres sous-évalués</li>
-                    </ul>
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <p class="font-semibold text-xs text-gray-500 uppercase tracking-wider mb-2">Détails des cours (6 jours)</p>
-                        <ul class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
-                            <li>Investisseur Actif (1j)</li>
-                            <li>Négociateur & Investisseur Avancé (3j)</li>
-                            <li>Plateforme IB Niveau 1 & 2 (2j)</li>
-                        </ul>
-                        <div class="mt-3 text-xs font-bold text-primary bg-blue-50 py-1 px-2 rounded inline-block">
-                            + 1 mois d'accompagnement Platine
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Programme Option -->
-                <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 hover:shadow-lg transition">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Programme Option</h3>
-                    <p class="text-sm text-primary font-semibold mb-4">Maîtrisez les stratégies d'options</p>
-                    <ul class="space-y-3 mb-6 text-gray-600 text-sm">
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Notions de base et avancées (options)</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Stratégies flexibles (spreads, combos)</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Exécution via Interactive Brokers</li>
-                    </ul>
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <p class="font-semibold text-xs text-gray-500 uppercase tracking-wider mb-2">Détails des cours (6 jours)</p>
-                        <ul class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
-                            <li>Option Négociateur & Invest. Avancé (3j)</li>
-                            <li>Plateforme IB Niveau 1, 2 & 3 (3j)</li>
-                        </ul>
-                        <div class="mt-3 text-xs font-bold text-primary bg-blue-50 py-1 px-2 rounded inline-block">
-                            + 1 mois d'accompagnement Platine
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Programme Action & Option -->
-                <div class="bg-white rounded-2xl shadow-xl border-2 border-primary p-8 hover:shadow-2xl transition relative transform md:-translate-y-2">
-                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl uppercase tracking-wide">
-                        Le plus complet
-                    </div>
-                    <div class="w-16 h-16 bg-primary text-white rounded-xl flex items-center justify-center mb-6 shadow-md">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Action & Option</h3>
-                    <p class="text-sm text-primary font-semibold mb-4">La formation complète</p>
-                    <ul class="space-y-3 mb-6 text-gray-600 text-sm">
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Combinaison des deux programmes</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Maîtrise totale des marchés boursiers</li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Idéal pour devenir trader autonome</li>
-                    </ul>
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <p class="font-semibold text-xs text-gray-500 uppercase tracking-wider mb-2">Détails des cours (10 jours)</p>
-                        <ul class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
-                            <li>Action Investisseur Actif (1j)</li>
-                            <li>Action Avancé (3j) & Option Avancé (3j)</li>
-                            <li>Plateforme IB Niveau 1, 2 & 3 (3j)</li>
-                        </ul>
-                        <div class="mt-3 text-xs font-bold text-white bg-primary py-1 px-2 rounded inline-block shadow">
-                            + 1 mois d'accompagnement Platine
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coaching / Accompagnement Section (Value Only) -->
-    <section id="accompagnement" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-dark mb-4">Plans d'Accompagnement et Coaching</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Ne tradez plus seul. Bénéficiez d'outils exclusifs, de sessions d'analyses en direct et d'une communauté de professionnels pour sécuriser vos gains.</p>
-            </div>
-
-            <div class="overflow-x-auto rounded-2xl shadow-sm border border-gray-200">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr>
-                            <th class="p-5 border-b border-gray-200 bg-gray-50 w-1/3">
-                                <span class="text-gray-500 text-sm uppercase tracking-wider font-semibold">Fonctionnalités & Outils</span>
-                            </th>
-                            <th class="p-5 border-b border-gray-200 bg-white text-center">
-                                <span class="text-xl font-bold text-gray-700">Bronze</span>
-                            </th>
-                            <th class="p-5 border-b border-gray-200 bg-gray-50 text-center">
-                                <span class="text-xl font-bold text-gray-500">Argent</span>
-                            </th>
-                            <th class="p-5 border-b border-gray-200 bg-yellow-50 text-center">
-                                <span class="text-xl font-bold text-yellow-600">Or</span>
-                            </th>
-                            <th class="p-5 border-b border-gray-200 bg-blue-50 text-center">
-                                <span class="text-xl font-bold text-primary">Platine</span>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm">
-                        <tr>
-                            <td class="p-5 border-b border-gray-100 bg-white font-medium text-gray-800">
-                                Oppscan
-                                <div class="text-xs text-gray-500 font-normal mt-1">Scanner d'opportunités de marché</div>
-                            </td>
-                            <td class="p-5 border-b border-gray-100 bg-white text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-gray-50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-yellow-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-blue-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 border-b border-gray-100 bg-white font-medium text-gray-800">
-                                SPAD-HM
-                                <div class="text-xs text-gray-500 font-normal mt-1">Planification et Analyse Direct hors marché</div>
-                            </td>
-                            <td class="p-5 border-b border-gray-100 bg-white text-center text-xs text-gray-500">Enregistrements</td>
-                            <td class="p-5 border-b border-gray-100 bg-gray-50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-yellow-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-blue-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 border-b border-gray-100 bg-white font-medium text-gray-800">
-                                Trak™
-                                <div class="text-xs text-gray-500 font-normal mt-1">Accès exclusif aux grilles</div>
-                            </td>
-                            <td class="p-5 border-b border-gray-100 bg-white text-center text-gray-300">-</td>
-                            <td class="p-5 border-b border-gray-100 bg-gray-50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-yellow-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-blue-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 border-b border-gray-100 bg-white font-medium text-gray-800">
-                                Trading Room
-                                <div class="text-xs text-gray-500 font-normal mt-1">Espace des négociants</div>
-                            </td>
-                            <td class="p-5 border-b border-gray-100 bg-white text-center text-gray-300">-</td>
-                            <td class="p-5 border-b border-gray-100 bg-gray-50 text-center text-gray-300">-</td>
-                            <td class="p-5 border-b border-gray-100 bg-yellow-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                            <td class="p-5 border-b border-gray-100 bg-blue-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 border-b border-gray-100 bg-white font-medium text-gray-800">
-                                SAND-HR
-                                <div class="text-xs text-gray-500 font-normal mt-1">Analyse et Négociation Direct heures régulières</div>
-                            </td>
-                            <td class="p-5 border-b border-gray-100 bg-white text-center text-gray-300">-</td>
-                            <td class="p-5 border-b border-gray-100 bg-gray-50 text-center text-gray-300">-</td>
-                            <td class="p-5 border-b border-gray-100 bg-yellow-50/50 text-center text-gray-300">-</td>
-                            <td class="p-5 border-b border-gray-100 bg-blue-50/50 text-center"><svg class="w-6 h-6 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 bg-white font-medium text-gray-800">
-                                Escompte sur les formations
-                            </td>
-                            <td class="p-5 bg-white text-center font-bold text-gray-700">10%</td>
-                            <td class="p-5 bg-gray-50 text-center font-bold text-gray-700">30%</td>
-                            <td class="p-5 bg-yellow-50/50 text-center font-bold text-yellow-700">40%</td>
-                            <td class="p-5 bg-blue-50/50 text-center font-bold text-primary">50%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <!-- The Team -->
+    <section id="equipe" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">L'Équipe DayTrader Canada</h2>
+            <p class="text-lg text-grayText mb-12 max-w-2xl mx-auto">Une équipe dynamique de plus de 20 professionnels dévoués à votre succès sur les marchés boursiers.</p>
             
-            <div class="mt-12 text-center">
-                <p class="text-sm text-gray-500 italic">Discutez de nos plans d'accompagnement avec notre équipe lors de notre entretien.</p>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Team Member 1 -->
+                <div class="bg-lightBackground rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://www.daytradercanada.com/wp-content/uploads/2021/07/PAULbuste-1.jpg" alt="Réjean Paul" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary">Réjean Paul</h3>
+                        <p class="text-accent font-medium mb-3">Président Fondateur</p>
+                        <p class="text-grayText text-sm">Négociant analyste à temps plein sur les marchés américains (NASDAQ/NYSE) depuis 1997. Il enseigne l’art de la négociation à court terme et partage sa vaste expérience.</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-lightBackground rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="h-64 bg-gray-200 overflow-hidden">
+                        <img src="https://www.daytradercanada.com/wp-content/uploads/2021/07/Bibeaub.jpg" alt="Michel Bibeau" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary">Michel Bibeau</h3>
+                        <p class="text-accent font-medium mb-3">Directeur des ventes et du service client</p>
+                        <p class="text-grayText text-sm">Fort de 17 ans d'expérience dans les marchés financiers, Michel joue un rôle clé d'assistance et de coaching auprès de notre clientèle internationale.</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-lightBackground rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="h-64 bg-gray-200 overflow-hidden bg-primaryLight flex items-center justify-center">
+                        <span class="text-white text-4xl font-bold">L'Équipe Conseil</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary">Nos Conseillers & Formateurs</h3>
+                        <p class="text-accent font-medium mb-3">Votre accompagnement sur-mesure</p>
+                        <p class="text-grayText text-sm">Vincent Michalk, François Patenaude et toute notre équipe de formateurs sont disponibles pour des sessions privées, du tutorat et un suivi personnalisé de votre progression.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section (Strictly Bottom) -->
-    <section id="prix" class="py-20 bg-dark text-white border-t-8 border-primary">
+    <!-- Testimonials -->
+    <section id="temoignages" class="py-20 bg-primary text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold mb-4">Investissez dans votre succès</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Tarifs de nos plans d'accompagnement exclusifs.</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ce que disent nos membres</h2>
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="text-yellow-400 text-2xl">★★★★★</span>
+                    <span class="text-lg font-medium">4.7/5 Basé sur plus de 139 avis</span>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Bronze -->
-                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 text-center hover:border-gray-500 transition">
-                    <h3 class="text-xl font-bold mb-2">Bronze</h3>
-                    <div class="my-6">
-                        <span class="text-4xl font-extrabold">99€</span><span class="text-gray-400">/mo</span>
-                        <div class="text-sm text-gray-400 mt-2">ou 999€ / an</div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="flex text-yellow-400 mb-4 text-sm">★★★★★</div>
+                    <p class="text-gray-200 mb-6 italic">"La meilleure formation de trading au Québec (et francophonie). La qualité des stratégies et la pertinence des informations sont supérieures à tout ce que j'ai vu. Il n'y a pas de promesse de 'devenir riche rapidement', mais un vrai travail de pro."</p>
+                    <div class="font-bold text-white">- Anthony Vacchio</div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="flex text-yellow-400 mb-4 text-sm">★★★★★</div>
+                    <p class="text-gray-200 mb-6 italic">"Excellente formation de qualité, beaucoup de contenu... vidéo, du Live en direct permettant l'apprentissage. Je suis extrêmement satisfait de l'expérience, tout est clairement expliqué et représentatif du marché."</p>
+                    <div class="font-bold text-white">- Mathieu Marcoux</div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="flex text-yellow-400 mb-4 text-sm">★★★★★</div>
+                    <p class="text-gray-200 mb-6 italic">"Un gros merci à Vincent Michalk pour son professionnalisme lors de notre coaching virtuel. C'est un tremplin vers un monde de possibilités ! Le savoir coûte cher, mais l'ignorance encore plus !"</p>
+                    <div class="font-bold text-white">- William Dubé</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION - MUST BE AT THE BOTTOM -->
+    <section id="offres" class="py-20 bg-lightBackground">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Investissez dans vos connaissances</h2>
+                <p class="text-lg text-grayText max-w-2xl mx-auto">Découvrez nos formations E-Learning complètes et nos forfaits d'accompagnement pour trader avec les meilleurs professionnels de l'industrie.</p>
+            </div>
+
+            <!-- E-LEARNING PACKAGES -->
+            <h3 class="text-2xl font-bold text-primary mb-8 text-center border-b pb-4">Nos Formations E-Learning</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-20">
+                <!-- Programme Actions -->
+                <div class="bg-[#f8fafd] rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col">
+                    <div class="h-48 bg-blue-900 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Programme Actions" class="w-full h-full object-cover opacity-80 mix-blend-overlay">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-sm text-gray-700 uppercase mb-1">PROGRAMME</p>
+                        <h3 class="text-3xl font-bold text-[#38bdf8] mb-2 leading-tight">Programme Actions</h3>
+                        <p class="text-gray-600 text-sm mb-6">2 Cours inclus</p>
+                        
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <svg class="h-4 w-4 text-[#38bdf8] mr-2 font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            offre spéciale
+                        </div>
+
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-semibold text-gray-900">Prix initial</span>
+                            <span class="text-xl text-gray-500 line-through decoration-gray-500">€3,096</span>
+                        </div>
+                        <div class="text-right mb-2">
+                            <span class="text-3xl font-bold text-gray-900">€2,295</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="https://www.daytradercanada.com/nous-joindre/" class="block w-full text-center bg-[#1e4ed8] hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded transition duration-300">S'inscrire</a>
                     </div>
                 </div>
 
-                <!-- Argent -->
-                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 text-center hover:border-gray-500 transition">
-                    <h3 class="text-xl font-bold mb-2 text-gray-300">Argent</h3>
-                    <div class="my-6">
-                        <span class="text-4xl font-extrabold">299€</span><span class="text-gray-400">/mo</span>
-                        <div class="text-sm text-gray-400 mt-2">ou 2,999€ / an</div>
+                <!-- Programme Options -->
+                <div class="bg-[#f8fafd] rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col">
+                    <div class="h-48 bg-blue-800 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Programme Options" class="w-full h-full object-cover opacity-80 mix-blend-overlay">
                     </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-sm text-gray-700 uppercase mb-1">PROGRAMME</p>
+                        <h3 class="text-3xl font-bold text-[#38bdf8] mb-2 leading-tight">Programme Options</h3>
+                        <p class="text-gray-600 text-sm mb-6">5 Cours inclus</p>
+                        
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <svg class="h-4 w-4 text-[#38bdf8] mr-2 font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            offre spéciale
+                        </div>
+
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-semibold text-gray-900">Prix initial</span>
+                            <span class="text-xl text-gray-500 line-through decoration-gray-500">€4,443</span>
+                        </div>
+                        <div class="text-right mb-2">
+                            <span class="text-3xl font-bold text-gray-900">€3,295</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="https://www.daytradercanada.com/nous-joindre/" class="block w-full text-center bg-[#1e4ed8] hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded transition duration-300">S'inscrire</a>
+                    </div>
+                </div>
+
+                <!-- Programme Actions & Options -->
+                <div class="bg-[#f8fafd] rounded-xl shadow-sm overflow-hidden border border-blue-200 flex flex-col relative transform scale-105 z-10">
+                    <div class="absolute top-0 right-0 bg-[#38bdf8] text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-20">Le plus complet</div>
+                    <div class="h-48 bg-blue-950 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Programme Actions & Options" class="w-full h-full object-cover opacity-80 mix-blend-overlay">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-sm text-gray-700 uppercase mb-1">PROGRAMME</p>
+                        <h3 class="text-3xl font-bold text-[#38bdf8] mb-2 leading-tight">Programme Actions & Options</h3>
+                        <p class="text-gray-600 text-sm mb-6">7 Cours inclus</p>
+                        
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <svg class="h-4 w-4 text-[#38bdf8] mr-2 font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            offre spéciale
+                        </div>
+
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-semibold text-gray-900">Prix initial</span>
+                            <span class="text-xl text-gray-500 line-through decoration-gray-500">€7,539</span>
+                        </div>
+                        <div class="text-right mb-2">
+                            <span class="text-3xl font-bold text-gray-900">€5,595</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="https://www.daytradercanada.com/nous-joindre/" class="block w-full text-center bg-[#1e4ed8] hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded transition duration-300">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACCOMPAGNEMENT PACKAGES -->
+            <h3 class="text-2xl font-bold text-primary mb-8 text-center border-b pb-4 mt-12">Nos Forfaits d'Accompagnement (Trading Room & Outils)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Bronze -->
+                <div class="bg-white rounded-xl shadow text-center p-6 border-t-4 border-orange-400">
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Bronze</h4>
+                    <p class="text-3xl font-bold text-primary mb-1">99€/mois</p>
+                    <p class="text-sm text-gray-500 mb-6">ou 999€/an</p>
+                    <ul class="text-sm text-left space-y-3 mb-6 flex-grow min-h-[150px]">
+                        <li>✓ <strong>Oppscan</strong> (Balayeur d'opportunités)</li>
+                        <li>✓ SPAD-HM (Enregistrements seulement)</li>
+                        <li>✓ 10% d'escompte sur les formations</li>
+                    </ul>
+                </div>
+                
+                <!-- Argent -->
+                <div class="bg-white rounded-xl shadow text-center p-6 border-t-4 border-gray-400">
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Argent</h4>
+                    <p class="text-3xl font-bold text-primary mb-1">299€/mois</p>
+                    <p class="text-sm text-gray-500 mb-6">ou 2999€/an</p>
+                    <ul class="text-sm text-left space-y-3 mb-6 flex-grow min-h-[150px]">
+                        <li>✓ <strong>Oppscan</strong></li>
+                        <li>✓ SPAD-HM en direct hors marché</li>
+                        <li>✓ <strong>Trak™</strong> (Accès aux grilles)</li>
+                        <li>✓ 30% d'escompte sur les formations</li>
+                    </ul>
                 </div>
 
                 <!-- Or -->
-                <div class="bg-gray-800 rounded-2xl p-6 border border-yellow-600/50 text-center hover:border-yellow-500 transition relative">
-                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                        Populaire
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-yellow-500">Or</h3>
-                    <div class="my-6">
-                        <span class="text-4xl font-extrabold">499€</span><span class="text-gray-400">/mo</span>
-                        <div class="text-sm text-gray-400 mt-2">ou 4,999€ / an</div>
-                    </div>
+                <div class="bg-white rounded-xl shadow text-center p-6 border-t-4 border-yellow-400 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">Populaire</div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Or</h4>
+                    <p class="text-3xl font-bold text-primary mb-1">499€/mois</p>
+                    <p class="text-sm text-gray-500 mb-6">ou 4999€/an</p>
+                    <ul class="text-sm text-left space-y-3 mb-6 flex-grow min-h-[150px]">
+                        <li>✓ Oppscan & Trak™</li>
+                        <li>✓ SPAD-HM en direct</li>
+                        <li>✓ <strong>Espace des négociants</strong> "Trading Room"</li>
+                        <li>✓ 40% d'escompte sur les formations</li>
+                    </ul>
                 </div>
 
                 <!-- Platine -->
-                <div class="bg-gray-800 rounded-2xl p-6 border border-primary text-center shadow-lg shadow-primary/20 relative">
-                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
-                        Ultime
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-primary">Platine</h3>
-                    <div class="my-6">
-                        <span class="text-4xl font-extrabold">699€</span><span class="text-gray-400">/mo</span>
-                        <div class="text-sm text-gray-400 mt-2">ou 6,999€ / an</div>
-                    </div>
+                <div class="bg-gray-900 rounded-xl shadow text-center p-6 border-t-4 border-blue-400 text-white">
+                    <h4 class="text-xl font-bold text-white mb-2">Platine</h4>
+                    <p class="text-3xl font-bold text-blue-400 mb-1">699€/mois</p>
+                    <p class="text-sm text-gray-400 mb-6">ou 6999€/an</p>
+                    <ul class="text-sm text-left space-y-3 mb-6 flex-grow min-h-[150px] text-gray-300">
+                        <li>✓ Oppscan & Trak™</li>
+                        <li>✓ SPAD-HM en direct</li>
+                        <li>✓ Espace des négociants</li>
+                        <li>✓ <strong>SAND-HR</strong> (Analyse/Négociation Direct Heures Régulières)</li>
+                        <li>✓ 50% d'escompte sur les formations</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="mt-16 pt-8 border-t border-gray-800 text-center text-sm text-gray-500 flex flex-col items-center">
-                <img src="logo.jpg" alt="DayTrader Canada Logo" class="h-10 opacity-50 grayscale mb-4">
-                <p>&copy; 2024 DayTrader Canada. Tous droits réservés.</p>
-                <p class="mt-2">Trading comporte des risques. Assurez-vous de comprendre ces risques avant d'investir.</p>
+            <div class="mt-12 text-center">
+                <p class="text-sm text-grayText">Tous les prix sont en Euros (€).</p>
+                <div class="mt-8">
+                    <a href="https://www.daytradercanada.com/nous-joindre/" class="bg-accent hover:bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg inline-block">Contacter un conseiller depuis la France</a>
+                </div>
             </div>
+
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left grid md:grid-cols-3 gap-8">
+            <div>
+                <img class="h-10 mb-6 mx-auto md:mx-0 filter brightness-0 invert" src="https://www.daytradercanada.com/wp-content/themes/daytrader/public/images/svg/logo.svg" alt="DayTrader Canada">
+                <p class="text-gray-400 text-sm">Votre partenaire de confiance pour l'investissement actif sur les marchés boursiers.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">Contact France</h4>
+                <p class="text-gray-400">Téléphone: +33 1 89 96 09 15</p>
+                <p class="text-gray-400 mt-2">Du Lundi au Vendredi<br>Pour l'ouverture des marchés</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">Siège Social (Canada)</h4>
+                <p class="text-gray-400">6000, boul. De Rome, Bureau 410,<br>Brossard, QC, J4Y 0B6</p>
+                <p class="text-gray-400 mt-2">Amérique du nord: 1 888 520-2094</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-blue-900 text-center text-gray-500 text-sm">
+            Tous droits réservés © 2024 DayTrader Canada
+        </div>
+    </footer>
 
 </body>
 </html>
